@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-padre {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1.5fr 5fr 5fr;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  grid-template-areas: "encabezado filtros filtros" "encabezado sprincipal sprincipal" "encabezado sprincipal sprincipal" "footer sprincipal sprincipal";
+}
+@media (max-width: 576px) {
+  .container-padre {
+    background-color: rgb(230, 221, 221);
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "titulo" "detalle" "filtros" "sprincipal" "cuadro" "footer";
+  }
+}
+.container-padre .encabezado {
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 5px;
+  background-color: rgb(33, 33, 255);
+  color: white;
+}
+.container-padre .filtros {
+  grid-area: filtros;
+  background-color: rgb(243, 242, 242);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.container-padre .sprincipal {
+  grid-area: sprincipal;
+  margin: 10px;
+  height: auto;
+  width: auto;
+  background-color: rgb(255, 253, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: grid;
+  display: grid;
+}
+@media (min-width: 577px) {
+  .container-padre .sprincipal {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.container-padre .footer {
+  grid-area: footer;
+  background-color: rgb(28, 28, 235);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.container-padre .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-padre .detalles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.container-padre .cuadro {
+  border: 1px solid black;
+  background-color: white;
+  width: 150px;
+  height: 180px;
+  row-gap: 2%;
+}
+.container-padre .com {
+  background-color: rgb(33, 33, 255);
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+.container-padre img {
+  width: 120px;
+  height: 160px;
+}
+.container-padre .com {
+  background-color: rgb(33, 33, 255);
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+.container-padre img {
+  width: 120px;
+  height: 140px;
+}/*# sourceMappingURL=style.css.map */
